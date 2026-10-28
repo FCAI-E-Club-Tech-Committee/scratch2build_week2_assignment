@@ -1,13 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Responsive personal dashboard assignment starter">
-  <title>Personal Dashboard | Scratch2Build</title>
+  <title>Habiba's Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!-- Write your code here -->
+
+  <!-- Navigation -->
+  <aside class="sidebar">
+    <h2 class="logo">MyDashboard</h2>
+
+    <nav class="nav">
+      <a href="#overview" class="active">Overview</a>
+      <a href="#analytics">Analytics</a>
+      <a href="#projects">Projects</a>
+      <a href="#activity">Recent Activity</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="header">
+      <h1>Habiba's Dashboard</h1>
+      <div class="user-info">
+        <span>Welcome back!</span>
+        <span class="avatar">HN</span>
+      </div>
+    </header>
+
+    <section class="content" id="overview">
+
+      <h2 class="section-title">Analytics Overview</h2>
+             <div class="analytics-grid" id="analytics">
+        <article class="card">
+          <h3>Total Revenue</h3>
+          <p class="number">$12,500</p>
+          <p class="description">Monthly revenue</p>
+        </article>
+
+        <article class="card">
+          <h3>Total Users</h3>
+          <p class="number">1,250</p>
+          <p class="description">Registered users</p>
+        </article>
+
+        <article class="card">
+          <h3>Active Projects</h3>
+          <p class="number">18</p>
+          <p class="description">Projects in progress</p>
+        </article>
+
+        <article class="card">
+          <h3>Completed Tasks</h3>
+          <p class="number">86%</p>
+          <p class="description">Tasks completed</p>
+        </article>
+
+      </div>
+      <section class="activity" id="activity">
+        <h2>Recent Activity</h2>
+
+        <div class="activity-grid">
+          <article class="activity-card">
+            <h3>Project Updated</h3>
+            <p>The website project was updated.</p>
+            <small>10 minutes ago</small>
+          </article>
+
+          <article class="activity-card">
+            <h3>Task Completed</h3>
+            <p>A new task has been completed.</p>
+            <small>1 hour ago</small>
+          </article>
+
+          <article class="activity-card" id="projects">
+            <h3>New Project</h3>
+            <p>A new project was added.</p>
+            <small>Yesterday</small>
+          </article>
+        </div>
+      </section>
+
+    </section>
+
+  </main>
+
 </body>
 </html>
