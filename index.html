@@ -1,13 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Responsive personal dashboard assignment starter">
-  <title>Personal Dashboard | Scratch2Build</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!-- Write your code here -->
+
+    <aside class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        
+        <header class="header-bar">
+            <h1>Welcome Back, Habiba</h1>
+            <div class="user-profile">
+                <span>Admin</span>
+            </div>
+        </header>
+
+        <section class="analytics-grid">
+            <div class="card">
+                <h3>Total Visits</h3>
+                <p>12,480</p>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>$8,340</p>
+            </div>
+            <div class="card">
+                <h3>Tasks Completed</h3>
+                <p>28/32</p>
+            </div>
+            <div class="card">
+                <h3>System Health</h3>
+                <p>98%</p>
+            </div>
+        </section>
+
+        <section class="activity-feed">
+            <h2>Recent Activity</h2>
+            <ul>
+                <li><span>Pushed commit to feature/responsive-dashboard</span> <small>2 hours ago</small></li>
+                <li><span>Reviewed Pull Request from teammate</span> <small>5 hours ago</small></li>
+                <li><span>Updated CSS Custom Variables</span> <small>Yesterday</small></li>
+            </ul>
+        </section>
+
+    </div>
+
 </body>
 </html>
