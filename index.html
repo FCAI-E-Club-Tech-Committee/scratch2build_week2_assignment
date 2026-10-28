@@ -4,10 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Responsive personal dashboard assignment starter">
-  <title>Personal Dashboard | Scratch2Build</title>
+  <title>Responsive Personal Dashboard UI (Vanilla CSS)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!-- Write your code here -->
+<div class="app">
+  <aside class="sidebar">
+    <h2 class="logo">MyDash</h2>
+    <nav class="nav">
+      <a href="#" class="nav-link active">Overview</a>
+      <a href="#" class="nav-link">Analytics</a>
+      <a href="#" class="nav-link">Messages</a>
+      <a href="#" class="nav-link">Settings</a>
+    </nav>
+  </aside>
+
+  <div class="main">
+    <header class="header">
+      <h1>Dashboard</h1>
+      <div class="user">
+        <p class="user-name">Welcome back</p>
+        <div class="avatar">A</div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="analytics-grid">
+        <div class="card"><h3>Visitors</h3><p class="value">12,480</p></div>
+        <div class="card"><h3>Revenue</h3><p class="value">$8,320</p></div>
+        <div class="card"><h3>Orders</h3><p class="value">342</p></div>
+        <div class="card"><h3>Growth</h3><p class="value">+14%</p></div>
+      </section>
+
+      <section class="activity">
+        <h2>Recent Activity</h2>
+        <ul class="activity-list">
+        <li class="activity-item">New order received</li>
+        <li class="activity-item">Profile updated</li>
+        <li class="activity-item">Weekly report ready</li>
+      </ul>
+      </section>
+    </main>
+  </div>
+</div>
 </body>
 </html>
