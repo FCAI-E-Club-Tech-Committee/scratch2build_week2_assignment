@@ -18,7 +18,7 @@ body {
   color: var(--text);
 }
 
-.dashboard-main{
+.dashboard-container{
   display: grid;
   grid-template-columns: 220px 1fr;
   min-height: 100vh;
