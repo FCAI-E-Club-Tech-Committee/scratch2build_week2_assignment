@@ -1,1 +1,163 @@
+:root{
+    --primary-color: #0f172a;
+    --primary-light: #1e2e53;
+    --border-color: #39b2e6;
+    --text-color: #f4ecec;
+    --hover-color: #17357a;
+}
 
+*, *::before, *::after { 
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+.dashboard{
+    display: flex;
+
+}
+.sidebar{
+    width: 240px;
+    flex-shrink: 0;
+    padding: 20px;
+    margin: 10px;
+    border-right: 2px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 3px solid var(--border-color);
+}
+
+.content{
+    flex: 1;
+
+}
+
+.sidebar li{
+    list-style-type: none;
+    border: 3px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var(--primary-light);
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sidebar a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.header span{
+    border: 2px solid var(--border-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title{
+    padding: 20px;
+}
+
+.card{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    align-items: center;
+
+}
+
+.card article{
+    border: 2px dashed var(--border-color);
+    border-radius: 10px;
+    background-color: var(--primary-light);
+    padding: 40px;
+    text-align: center;
+}
+.card article:hover{
+    background-color: var(--hover-color);
+}
+
+.activity{
+    border: 3px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+
+}
+.activity li{
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--primary-light);
+}
+
+.activity li::marker {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media(max-width: 768px){
+    .dashboard{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+        min-height: auto;
+        border-bottom: 1px solid var(--border-color);
+        border-right: none;
+        position: static;
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar ul{
+        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2px;
+    }
+    .card{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 10px;
+        align-items: center;
+    }
+    .card article{
+        padding: 20px;
+    }
+    .header{
+        border-bottom: none;
+    }
+    .activity{
+        border: none;
+        padding: 10px;
+        margin: 5px;
+    }
+    .activity li{
+        padding: 10px;
+        margin: 5px;
+    }
+    .activity ol{
+        margin: 0;
+        padding: 10px;
+    }
+}
