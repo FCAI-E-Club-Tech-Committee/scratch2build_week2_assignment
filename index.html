@@ -1,13 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Responsive personal dashboard assignment starter">
-  <title>Personal Dashboard | Scratch2Build</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal dashboard">
+    <title>Personal Dashboard | Scratch2Build</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!-- Write your code here -->
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <h2 class="logo">My Dashboard</h2>
+
+            <nav class="nav">
+                <a href="#overview">Overview</a>
+                <a href="#analytics">Analytics</a>
+                <a href="#activity">Recent Activity</a>
+                <a href="#projects">Projects</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+
+            <header class="header">
+                <div>
+                    <h1>Welcome Back!</h1>
+                    <p class="subtitle">Here is your dashboard.</p>
+                </div>
+
+                <div class="header-actions">
+                    <input class="search" type="search" placeholder="Search...">
+                    <div class="avatar">Y</div>
+                </div>
+            </header>
+
+            <section class="section" id="overview">
+                <div class="section-heading">
+                    <h2>Overview</h2>
+                </div>
+
+                <div class="analytics-grid">
+                    <div class="card">
+                        <p class="metric-label">Revenue</p>
+                        <h3 class="metric-value">$5,000</h3>
+                        <p class="metric-change">+12% this month</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="metric-label">Active Users</p>
+                        <h3 class="metric-value">1,250</h3>
+                        <p class="metric-change">+8% this month</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="metric-label">Projects</p>
+                        <h3 class="metric-value">12</h3>
+                        <p class="metric-change">3 new projects</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="metric-label">Pending Tasks</p>
+                        <h3 class="metric-value">8</h3>
+                        <p class="metric-change">4 completed today</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="analytics">
+                <div class="section-heading">
+                    <h2>Analytics</h2>
+                    <p class="subtitle">This month's performance</p>
+                </div>
+
+                <div class="analytics-grid">
+                    <div class="card">
+                        <p class="metric-label">Total Revenue</p>
+                        <h3 class="metric-value">$12,500</h3>
+                        <p class="metric-change">+12% this month</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="metric-label">Active Users</p>
+                        <h3 class="metric-value">2,450</h3>
+                        <p class="metric-change">+8% this month</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="metric-label">Total Visitors</p>
+                        <h3 class="metric-value">8,320</h3>
+                        <p class="metric-change">+15% this month</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="metric-label">Conversion Rate</p>
+                        <h3 class="metric-value">4.8%</h3>
+                        <p class="metric-change">+2% this month</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="metric-label">Orders</p>
+                        <h3 class="metric-value">1,280</h3>
+                        <p class="metric-change">+10% this month</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="metric-label">Pending Tasks</p>
+                        <h3 class="metric-value">24</h3>
+                        <p class="metric-change">8 completed today</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="activity">
+                <div class="section-heading">
+                    <h2>Recent Activity</h2>
+                </div>
+
+                <div class="card">
+                    <div class="activity-list">
+
+                        <div class="activity-item">
+                            <div class="activity-icon">✓</div>
+                            <div>
+                                <p>Completed a project task</p>
+                                <small>10 minutes ago</small>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">+</div>
+                            <div>
+                                <p>Added a new project</p>
+                                <small>1 hour ago</small>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">↻</div>
+                            <div>
+                                <p>Updated dashboard information</p>
+                                <small>Yesterday</small>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">✓</div>
+                            <div>
+                                <p>Finished reviewing tasks</p>
+                                <small>Yesterday</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <div class="section-heading">
+                    <h2>My Projects</h2>
+                </div>
+
+                <div class="content-grid">
+
+                    <div class="card">
+                        <div class="project-top">
+                            <h3>Website Project</h3>
+                            <p>75%</p>
+                        </div>
+
+                        <div class="progress-track">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="project-top">
+                            <h3>Dashboard Project</h3>
+                            <p>50%</p>
+                        </div>
+
+                        <div class="progress-track">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>Made By Yassin Mohamed</p> 
+            </footer>
+
+        </main>
+    </div>
+
 </body>
 </html>
