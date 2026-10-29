@@ -1,1 +1,66 @@
 
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+@media (max-width: 375px) {
+  div {
+    grid-template-columns: 1fr;
+  }
+}
+:root{
+--color-section: rgb(164, 218, 206);
+--color-article: rgb(255, 0, 0);
+--color-nav : rgb(164, 206, 218);
+--color-header: aqua;
+}
+body{
+  display: flex;
+  height: 100vh;
+ 
+}
+div {
+  display : grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 3fr));
+  gap: 2px; 
+}
+header{
+  border-size: border-box;
+  background-color: var(--color-header);
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+nav{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  
+  background-color:var(--color-nav);
+}
+
+ div section{
+  align-content: flex-start;    
+  background-color: var(--color-section);
+  flex-direction: column;
+  font-size: 15px;
+  display: flex;
+}
+ div section p{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-section);
+  font-size: 15px;
+}
+div article{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-article);
+  font-size: 15px;
+}
